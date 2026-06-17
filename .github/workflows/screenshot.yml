@@ -1,0 +1,36 @@
+name: Save Emonika screenshots
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium --with-deps
+
+      - name: Save snapshots
+        run: python screenshot.py
+
+      - name: Commit images
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add slike/*.jpg spletna/*.png
+          git commit -m "Add Emonika snapshots" || echo "No changes"
+          git push
