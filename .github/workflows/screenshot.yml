@@ -2,7 +2,7 @@ name: Save Emonika screenshots
 
 on:
   schedule:
-    - cron: "*/59 * * * *"
+    - cron: '8 * * * *"
   workflow_dispatch:
 
 permissions:
