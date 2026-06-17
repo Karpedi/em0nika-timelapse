@@ -5,7 +5,7 @@ from urllib.request import urlretrieve
 
 URL = "https://emonika.rvo.si/lastsnapshot-emonika.jpeg"
 
-OUT = Path("shots")
+OUT = Path("slike")
 OUT.mkdir(exist_ok=True)
 
 timestamp = datetime.now(
