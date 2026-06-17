@@ -14,7 +14,6 @@ Projekt uporablja GitHub Actions za samodejno zajemanje slik vsako uro in ustvar
 ```text
 slike/
 ├── emonika_slika_YYYY-MM-DD_HH-MM-SS.jpg
-
 ```
 
 ## Avtomatizacija
