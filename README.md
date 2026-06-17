@@ -1,4 +1,4 @@
-# Emonika Timelapse
+# Em0nika Timelapse
 
 Avtomatsko spremljanje gradnje Emonike v Ljubljani.
 
