@@ -7,7 +7,7 @@ Projekt uporablja GitHub Actions za samodejno zajemanje slik vsako uro in ustvar
 ## Kaj se shranjuje?
 
 * 📷 Neposredni posnetek kamere (`lastsnapshot-emonika.jpeg`)
-* 🌐 Posnetek celotne spletne strani
+
 
 ## Struktura
 
@@ -15,8 +15,6 @@ Projekt uporablja GitHub Actions za samodejno zajemanje slik vsako uro in ustvar
 slike/
 ├── emonika_slika_YYYY-MM-DD_HH-MM-SS.jpg
 
-spletna/
-├── emonika_spletna_YYYY-MM-DD_HH-MM-SS.png
 ```
 
 ## Avtomatizacija
