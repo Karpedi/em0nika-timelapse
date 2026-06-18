@@ -4,6 +4,9 @@ Avtomatsko spremljanje gradnje Emonike v Ljubljani.
 
 Projekt uporablja GitHub Actions za samodejno zajemanje slik vsako uro in ustvarjanje arhiva napredka gradnje skozi čas.
 
+<!-- TIMELAPSE_START -->
+<!-- TIMELAPSE_END -->
+
 ## Kaj se shranjuje?
 
 * 📷 Neposredni posnetek kamere (`lastsnapshot-emonika.jpeg`)
