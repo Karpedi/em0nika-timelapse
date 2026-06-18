@@ -22,7 +22,11 @@ jobs:
       - name: Install ffmpeg
         run: sudo apt-get update && sudo apt-get install -y ffmpeg
 
-      - name: Build yesterday timelapse
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Create timelapse
         run: python make_timelapse.py
 
       - name: Commit timelapse
@@ -30,6 +34,8 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add timelapse README.md
+          git add README.md timelapse/latest.gif
+
           git commit -m "Update daily timelapse" || echo "No changes"
+
           git push
