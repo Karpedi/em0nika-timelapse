@@ -46,4 +46,4 @@ Cilj projekta je ustvariti dolgoročni vizualni arhiv gradnje Emonike in iz zbra
 
 ---
 
-*Neuraden projekt za spremljanje napredka gradnje Emonike.* ( Miha hvala ti za idejo)
+*Neuraden projekt za spremljanje napredka gradnje Emonike.* (Miha hvala ti za idejo)
