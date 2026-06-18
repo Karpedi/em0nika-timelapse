@@ -1,0 +1,35 @@
+name: Daily timelapse
+
+on:
+  schedule:
+    - cron: "20 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-timelapse
+  cancel-in-progress: false
+
+jobs:
+  timelapse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
+      - name: Build yesterday timelapse
+        run: python make_timelapse.py
+
+      - name: Commit timelapse
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add timelapse README.md
+          git commit -m "Update daily timelapse" || echo "No changes"
+          git push
