@@ -7,11 +7,11 @@ Projekt uporablja GitHub Actions za samodejno zajemanje slik vsako uro in ustvar
 <!-- TIMELAPSE_START -->
 ## 🎬 Zadnji dnevni timelapse
 
-📅 **02.09.2026**
+📅 **03.09.2026**
 
-📸 Število slik: **18**
+📸 Število slik: **17**
 
-![Timelapse za 02.09.2026](timelapse/latest.gif)
+![Timelapse za 03.09.2026](timelapse/latest.gif)
 
 <!-- TIMELAPSE_END -->
 
